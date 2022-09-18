@@ -94,7 +94,7 @@ export const ReviewForm = ({ productId, isOpened, className, ...props}: ReviewFo
                     onClick={() => setIsSuccess(false)}
                     aria-label="Закрыть оповещение"
                 >
-                <CloseIcon />
+                <CloseIcon className={styles.closeIcon}/>
                 </button>
             </div>}
             {error && <div className={cn(styles.error, styles.panel)}>
@@ -104,7 +104,7 @@ export const ReviewForm = ({ productId, isOpened, className, ...props}: ReviewFo
                     onClick={() => setError(undefined)}
                     aria-label="Закрыть оповещение"
                 >
-                    <CloseIcon />
+                    <CloseIcon className={styles.closeIcon}/>
                 </button>
             </div>}
         </form>

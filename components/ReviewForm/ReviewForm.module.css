@@ -53,6 +53,10 @@
     background: none;
 }
 
+.closeIcon {
+    cursor: pointer;
+}
+
 .error .close path {
     stroke: var(--red);
 }
