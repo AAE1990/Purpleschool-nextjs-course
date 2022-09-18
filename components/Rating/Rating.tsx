@@ -28,7 +28,7 @@ export const Rating = forwardRef(({ isEditable = false, rating, error, setRating
     const constructRating = (currentRating: number) => {
         const updateArray = ratingArray.map((r: JSX.Element, i: number) => {
             return (
-                <span
+                <span key={i}
                     className={cn(styles.star, {
                         [styles.filled]: i < currentRating,
                         [styles.editable]: isEditable
@@ -96,3 +96,4 @@ export const Rating = forwardRef(({ isEditable = false, rating, error, setRating
         </div>
     );
 });
+Rating.displayName = "Rating";

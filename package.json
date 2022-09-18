@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prepare": "husky install",
     "dev": "next dev",
+    "export": "next export",
     "debug": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
@@ -15,6 +17,7 @@
     "classnames": "^2.3.1",
     "date-fns": "^2.29.2",
     "framer-motion": "^7.3.4",
+    "husky": "^8.0.1",
     "next": "12.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
