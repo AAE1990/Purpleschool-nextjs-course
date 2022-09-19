@@ -2,6 +2,7 @@
   "name": "top-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://AAE1990.github.io/Purpleschool-nextjs-course",
   "scripts": {
     "prepare": "husky install",
     "dev": "next dev",
@@ -9,6 +10,7 @@
     "debug": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
+    "deploy": "gh-pages -d build",
     "lint": "next lint"
   },
   "dependencies": {
@@ -16,6 +18,7 @@
     "classnames": "^2.3.1",
     "date-fns": "^2.29.2",
     "framer-motion": "^7.3.4",
+    "gh-pages": "^4.0.0",
     "husky": "^8.0.1",
     "next": "12.2.4",
     "react": "18.2.0",
